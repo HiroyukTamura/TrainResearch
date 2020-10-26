@@ -1,0 +1,916 @@
+body {
+	font-size: 12px;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none;
+	font-family: helvetica;
+}
+#header {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #46c878;
+	padding: 0;
+	color: #fff;
+	font-size: 1.0rem;
+	text-align: center;
+}
+#header-wrapper {
+	height: 60px;
+}
+.content_header {
+	height: 60px;
+}
+#footer {
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	padding: 0;
+	border-top: 1px solid #444;
+}
+.beacon {
+	display: none;
+}
+#beaconBtn {
+	height: 43px;
+	width: 125px;
+	background-color: blue;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	/*background-size:240px 40px;*/
+	background-repeat: no-repeat;
+	text-align: left;
+	font-size: 1.3rem;
+	/*line-height:40px;*/
+	margin: 20px 0 0 98px;
+}
+#beaconBtn.sel {
+	background-image: url('../img/trainnet/btn_blue_tap_480.png');
+}
+#beaconBtn .icon {
+	padding-top: 5px;
+	padding-left: 3px;
+	/*height:34px;*/
+	color: #fff;/*float:left;*/
+}
+#beaconBtn .text {
+	color: #fff;
+	font-size: 85%;
+	margin-top: 5px;
+	line-height: 1.2em;
+}
+#beaconBtn img {
+	height: 28px;
+	width: 28px;
+	float: left;
+	margin-right: 3px;
+	padding: 3px 0 0 2px;
+}
+.ar {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.ar img {
+	width: 17.5px;
+	height: 17.5px;
+	position: relative;
+	z-index: 3;
+}
+#yamanote {
+	width: 320px;
+	margin: 0 auto;
+    padding-top:0px;
+}
+#yamaLine {
+	/*background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAKAAgMAAABxoyGwAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURf///5bSAsbnd+n1yRRJozEAAAUlSURBVHja7doxbhtHFIdxmoSKDSB1OgKLHGALN0aOoEKzFBIWKgPEhY6gS2yfJr0O4EJAzsAjuPAtQooUqSWBuJg3wGL291Vegx5+5s68ebP7n80AAAAAAAAAAAAAAAAAAKPmn9/jryJpUnqMvgplmdJD9FUofUpd9FUk8/T1c3qOvQrlU3pdpN9ir2LXyGo22zzGXsUKbuf28jH2Koyb7dTeLb7tEnwn86p7ifRb7PzSejZrT1+Ue9W9Bgq2KV5w94ewHzDkpl5cxf2ETeq+RS+SL33gjrdML/Fl5iZwx+tXJQr1JmzHm+9vRvRW14TteM1hOgc3C4uwSdiuyrRbm6hCc7su07C290GCxyUY3PI3qyDBQt3RdkFH7SOvZQSjBp4X6tC3CzqmznxalRLcxMyd6/tSgrdPYZ10oXPs4zQEr9alBNu7iQjelRK8IkiQIEGCBAnWIFjuzVDMyOXeDAWNXO7NUNDI5d4MxYw8T3/9KPNmKGjkcm+GgkYu92YoaORCb4biRt6d6doipTpo5F21L7OXBI08fsGx3+LRL5LRl5nRF+rRb3WjbxbG326NvmEdfcvvVEeQIEGCBAkSJEiQIEGCBAkSJEiQ4IQFZRYykVnIRGYheybLLOQWU5mF6gVlFmovMzIL1TcLMgv1t/xOdQQJEiRIkCBBggQJEiRIkCBBggQJTlhQZiETmYVMZBayZ7LMQm4xlVmoXlBmofYyI7NQfbMgs1B/y+9UR5AgQYIECRIkSJAgQYIECRIkSJDghAVlFjKRWchEZiF7Jsss5BZTmYXqBWUWai8zMgvVNwsyC/W3/E51BAkSJEiQIEGCBAkSJEiQIEGCBAlOWFBmIROZhUxkFrJnssxCbjGVWaheUGah9jIjs1B9syCzUH/L71RHkCBBggQJEiRIkCBBggQJEiRIkOCEBWUWMpFZyERmIXsmyyzkFlOZheoFZRZqLzMyC9U3CzIL9bf8TnUECRIkSJAgQYIECRIkSJAgQYIECU5YUGYhE5mFTGQWsmeyzEJuMZVZqF5QZqH2MiOzUH2zILNQf8vvVEeQIEGCBAkSJEiQIEGCBAkSJEiQ4IQFZRYykVnIRGYheybLLOQWU5mF6gVlFmovMzIL1TcLMgv1t/xOdQQJEiRIkCBBggQJEiRIkCBBggQJTlhQZiETmYVMZBayZ7LMQm4xlVmoXlBmofYyI7NQfbMgs1B/y+9UR5AgQYIECRL8+emrDO1EBJuHUoJBx9nRC17flxK8fYo5v65KCW5iztvzrpRgH3PeXqTXMn5hA5d58rF79hE1Vd4X2y/p77O73//5s5Pkr93ZfTwN0kRN7tv18VlFd/Fs4Pn/z+Lzi6cHp0HaqPLQro5fdubTn/tcPM1ozp+/fBhkE7VFNYfJvP2yoc/uyx7Ojbtz4+F/6jTIIuyRyvww0rL7t38YftnL9274ya+fhz79HzdDj9MgTdxTvX71PheH0+ZqNbtOw3V5/kwyPc02d2cT+jDIJq6+LtPLm+fT7How6HK9vU8ff4aLp7rz7exoB7/6cZCbwKd6Teq+7Qv/cFfZbfaD3eDiufju88Nm432QL33gU71F2vP8tiw+8Pi2LD7wsF8WJ7r9svjAaZDADap9H3Ex/LJtN7IZ/MX6+NkD23t+Pfw3x0Ei++BFHy/Yhe7wN330Le5einRHcYukSPsWWmZKdOixhbrAGSd2q4snuFmIJ7rdKrBKYhvWeIJbfgAAAAAAAAAAAAAAAADASPkPbD953VH8K18AAAAASUVORK5CYII=);*/
+	background-image: url("01.png");
+	text-align: center;
+	height: 1435px;
+	width: 320px;
+	background-size: 320px;
+	/*background-position-y:32px;*/
+	background-repeat: no-repeat;
+	padding-top: 0px;
+	position: absolute;
+	z-index: 1;
+}
+#yamaLine .tap {
+	display: none;
+}
+#north {
+	text-align: center;
+}
+#north img {
+	padding-top: 10px;
+	height: 55px;
+	width: 40px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+#north .nleft {
+	padding-left: 0;
+}
+#north .nright {
+	padding-right: 0;
+}
+#south {
+	text-align: center;
+	padding-top: 92px;
+}
+#south img {
+	height: 55px;
+	width: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#south .sleft {
+	padding-left: 0;
+}
+#south .sright {
+	padding-right: 0;
+}
+#west {
+	width: 20%;
+	float: left;
+	line-height: 18px;
+	padding-top: 90px;
+	text-align: left;
+	margin-left: 37px;
+}
+#west .vtop, #east .vtop {
+	padding-top: 0px;
+}
+#west .vbtm, #east .vbtm {
+	padding-top: 50px;
+}
+#west img {
+	height: 40px;
+	width: 55px;
+	padding-top: 53px;
+}
+#east {
+	width: 20%;
+	float: left;
+	line-height: 18px;
+	padding-top: 90px;
+	text-align: right;
+	margin-right: 0px;
+}
+#east img {
+	height: 40px;
+	width: 55px;
+	padding-top: 53px;
+}
+#in, #out {
+	height: 70px;
+	width: 60px;
+	position: relative;
+	z-index: 2;
+	top: 160px;
+	left: 100px;
+	background-size: 60px;
+	background-repeat: no-repeat;
+	float: left;
+}
+#in {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAIPGIL7hinK+AnK+Av///3K+Avb77uf009XstLDbcZjQRpF58XsAAAAFdFJOUwD9/hN5QQseGwAABClJREFUaN7tmkFv0zAUx/sVClrY6A2pGYML34FP0Epdk+WUCL2tyWmTuqHtNKSGjZ1AarSyE0grYpxWaRmDL4cdJ6nrJLaTWEKgvEO1tusvfs/Pz3+/pAX1zX7daoEKzqvWUX070B63Bgps/40STN9WghmCEsygwTSYBvMPYGCX/f78xa2GimTn62UNzLvbZb3tPK+IMb+sFu6n0yqYAw3X/MXW2dHR29nL6M1mecwH9Dtva/n+U4g++FkWc4F+9DBeKbhXxZwizHGeC9jNb2UwfUTJCaiJHOvKY4wwlxJxvIk0JgC7mx8EUwNHFnNcFALy3b0cZhjCRnHCfgR7IoU5BW/M2WhDWJfBGADX3H0fYCqBCXKDSFkAIzHGyLkYM1vZ/8hi/Oy1WPNhT4QZaqLB4AGzk5XBWOLB4Og8EWDm0BVjTPD4GBNcmRKuMxdjMT7cyWAsJsgsJrTHUppR83gYRybAJMhdDgbkfBoMdlY3ERYj5xP2yuVhHNntNoAJB7Mmi7FW3Gcxi2eUbXEzcI8XYtq4mRh6SjABjIswN6v2nYfp0ZlTXSb16emojhnSCV9DtIWuEkxgK8EcUnlcA2NRU1WE6W9KTNWdENOLU/0stZzlsCaLMZYpjQJhdSItkOgEalUJMb9jw5hetIyCJF+0EQ9jtJFpNn6dGOlsaOiP7ShTgqQmhQ4XQzmyiiGAFKO7XIyNAho46EXDmPMZskuCibzwE0zg8THJlSKMjoflxBg8tm03m8ZFmGi/IphfNzc/CEbf69AYX4gx7LCbYJD02okxrkdjDkGEsZzgSQ4mypQSGH3NcvMw1xKYeCNEGBOmhtbNweDy60tjAjdKDxZDZjjNGxHmGA++D/cshmSMPuJjtHgd2aQ86h7BPMxmVwRzEp2mwl3+hMdLzbAvIhFprrPpF9eHO376haNl+sXrCGE+kx0rxZymy6xgMcydPAy1NKOat1QkBUtT98QYdE5MK3BBoYh9jTFDssITdUEw6CC7wcaSxfhAY0xSb+giirXagkqQ/CLaIzLfaJPRtNuPBsOlLiD64VJc0i0ZgS7eYPqyMpS/3RnZvkulzVcblcEUSoG5p0SYrMi56jKpV2aqikVbX15d8yTkEErEmCNowxIx5shrX3zqlRH7lnwe844ehnxweAehwVzJsQytk2sFh0SUOSqOrLEgqXuAxlOu4DiPvZI6tPKbC9grmQwUtDqQ7StovOAM1GBStw2U33Eq3ZQqaICVbZEV9eNKNuySi3XrtQ8TBVOzmZlOVr3WamwnNRu9y1y3pzXazqlbIXi5HLkmOD0beRzJlvxKCKrfIKCszu0KllPx5knGBbAXs/elb+UwAa16Y4m1ire5slbppltlazANpsH8xxhFj/EoeqhIzSNO+IErRY9/KXoYrbHGGmussb9ufwBQ+DECagYQQQAAAABJRU5ErkJggg==);
+}
+#out {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAL3hiHK+AnK+Av///3K+AvT67OHxyIfIJ7HbctDpqp3ST6U+hTQAAAAEdFJOUwD+txMj80HhAAAEOElEQVRo3u2azW6bQBCALfUJKplEVc55gbyBJQL+OVnq2GBOlWLXTU6RTJq21+Ik9alS3MZ3k7bOqZJxqjxdl10wP4bZZYNUqWJOiVk+2NnZ+VtqtaNDeL7UXpRBgdoR7I2eL7XDnlqC1A7rpWDgpMJUmApTYZ6FOX31xwEwZl/v01eOEzeimHMv8razfUmMfpd02zcTGcwbMhswfv+4GI3erg7oP3vFMZ/IfdZ+aoKPRTE+5SlxSXtIcIQwZ6kpbKf5rQimQSa03P25TTh1cYzugLHMeknCMU6EMUoOhbymAwNRzFlMBRnX1mIYzYGrfMv+GUyLi7kEC9kgmscewsPo0WpkSgtgIoBxQyXmiQt9PkZnD0OkTUdwMDZ9Fip0CI4hyzThYXR/sXDMmP8yvnY+czAeLPmYBlg4pgFdEQ8+hyWKsQNT50gHeijGMYTijQYWhmmIKJgp2UUwQ7gVw3SIQ83HeGJz8meFYHTedop7tnxMh5iVoDQRjI3a3vnLmBwgGM/izCMheRgNV40opoGr5tciKXn5TROka6s4xpbPvOKYuVVK0uYMysDo0CsD0xDzNTxMJ1wojf6kX8hhjsOY0KROp+lr6v1WhDFDCP/ohRgtslnyiA5dSbePY1wj/GMzGo0CzHUgNFAyzADHKNY2yAAJEAwTXnV8jEmNlIOZd8Mden1NTGgXwwB2F8d4wWPaBtVygDldEbmnGKaVIQfjBLrz7x/26gGGuodugPHHsqnxMcqUvPnMDDE3i8Udwyi9mQAm2As6kHHKI1wGGBJyWgHGNMQxY8tZq95SgV0MHSGIcadji9zeysLcimMaJ5qzICY0N9MYFm9tM231mRg6gGZlV2mMlTA/Lkb3XQYJaI9JDAMofRzj9CPMxDcfr+9jnlarB4Y5o9WUFz7NNjgYaqjNQXuTNL/oTTFMuBlINrreOoqTD35I+h5hhttM1bXQramOaXqyuzVZbr1db8VEHYXuTNU8DKkTtyHR66JuS2G5EsOEGQSbyhhiWV08Hu060TFs1Gwn6lcvX6Jb4/Fo16W3zMhfaFHgZ8Mu4qnZazTABMrkBZhEWJMPd514/iEffIfxUkc+FXCNUhITzywjTdISdYF00pZMFAukkOn8ui6X0KZrGMn0OqVhS5VL9lPFeF8tpfRYqyUUQm6yXJctyxwLaWYKF4mt1P6TLFntlKVKFtCOgXZohcv5PooRbC4o6d0n1epog8VpOws1XmyYcjDCbSBOE1y0KcXB8FtkWSOkGnYDlY/htQ8bWa8r3czkYvDW6iVk7Zeijd53ECQcfAzSdm472buleBN8IozJbcl7eatY9IBgoxbB8I8rxDDcwxNBTOIo5+PuUY4ohnOwJIxJHnNZ+6L9mwzJP3QrhJHpJlWYClNh/jtMSR8VlfSJ0xHslYEp6fOvkj5Gq6SSSiqp5J/LX2gI6IvngZS4AAAAAElFTkSuQmCC);
+}
+#in.sel {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURQAAAHK+Aq76PnO/A43ZHaHtMCcZ7dcAAAACdFJOUwB5X0oEoAAAA05JREFUaN7tmuuRpCAQgCeEi0Hh/65gAqIJDJp/KifgAwSaBqm6H0fX1lTNqp/9AppmPqyC/Pl8amDY59O9l5X91MB08rcKhrAqmK5hGqZh/h8MG57Xt1moSZLP2wvMKu7pli+FGCrceZt/SzBEPztvuzl0m/WXJR+zPgzRBi65mNV/aI1zYhhl0eQvAIF/Qhj1QMChNMYJY2iYEr8QxsiY8orDsRgSpcSuBTGMjcB6HTIrhJFBvS8RgZcEMBQw6TDri8BIyKQufIOPoZFYO9H6JjFJZUK3+JikMiF1PEyfVkapMyQwAg7TqQ6HMRTOmTt3JhAj/Vk9nDsjiBEMtaDsToYwHONg4+QJwDCMg41VA4hBr5McwnAsRjoZ+MQMWEzvmP/EzLYsYKxGyDfOaot2TjnGcY6LmWe0Ua5zysskJ3NeVFu2j19gBK+CkawKprdC9QJDrFDFMGSqgumPMGyXBIbDgMXQO6V3RxAdGzn6EU9iOBP6T2H6HIytAb2iYWG4nzhZGJmH2R0q+f6hMYeDNWZ0MDKBOd+kMWbrcWCUbj330ziKYReGz7MwGDHyPAxlYjoxk460xnBmY/okhnA5BDA6xBkYMahU8zETAnMk946hCjB5GOMMicaoOyX3MTwLo8fu/hHGiBGOFDvHkUnPPS4as2zbajBELxViQGKkHgF0fKbfcXmCMWK80+8YRztmNSvWhbmXuchgOIbaA2MNTTPn8Q4emhiMvQ+KYA5bT4wZ4edCbDDS3iNFpi0XQ818Y0+ijklRzLHwnNroiuKuCw4V01M6wdaP8AJTCUPxlR+4+GJr60QpIHgOJlqYSJaDiZZJfY6P40UbyfFxvISkOT4GClqR4RygvJbpXS+m2Cd1th4ZzoE2QhnOgbZl+MwBN4nexrhsy6rmKqRNDGz0SpxV8Hb+MdmWNhf0DV9M7vFE97pG46XD9KTSbaCuq9KUwqmTbJHh1Ek27M6XvWwfnm+Dcoemm5mXOnBrtUNhXjd671SORQvVdra3VC+a4LbqL1ryt6xvDggenNLjiudDhYcnHkcd5Xyzj3K8fC07WPIUKjvm8qXo0K28QdUwDdMwDZOsKKtg+io/cSLsp9bPvyr9GK1JkyZNmvxz+QstnZqspFmtZgAAAABJRU5ErkJggg==);
+}
+#out.sel {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURQAAAHK+Aq76PnO/A43ZHaDtMCbbh+AAAAACdFJOUwB5X0oEoAAAA2BJREFUaN7tmguOpCAQhnuzR9gbqFxA4AKgFxC9/1VGARURq0qaZJMJZNLJdONH8ay/Cj+fP7xA+Xx4Ecxfrprvy+df35TAFDFmxTQVUzEVUzFfYZZBb2ekGJb4l5aTMbM+T1sxZmKYvh7bYsrBzPbZYVkfXpbB/qPeY+aoI7aD41vMfH3o/hUJM0ddsKULv6RgtgemxKAHHAKGpSnuBzpGP1CsmZKK6fizKz1+QzHsaDFVjO8WijFcABtkXduSgmEcVgedGzgMY6AunRUQDHucpWsNBIMa46vAGNwYWwfDtLgxmzk9gtG4MdtkCRjTgWsmbAzEGJqiXLsOYjjR33ABYTrKADurDYBpqSq54xzAaLIPhTCM2id7sj1iOk4OIFoAY8C1Nw9hATDw0ES++BGDDA0VgwzNtVPD8IRp82OrEGPylVeI0aIIhr74IAzjfQlM90X0msKw6fx8j2n3rdDK43M5ChlzzLfpdww71+zaRGdn0kgqZlxW/ekwgmv7Zx0lCXMsm23zCI/ZByjACCJm64NMYAwNI/cZswPjMX6ALUZSMIeqExtGeYwLPTxmavau4Rjdb02KHSOGQTuMloKC6f2eWOvpkRuPUXamLUZwOsaIdTXryUq8CONkFhHTG8G4c6AxRtEx3cT4INz8XzFufR4zFXrxO+ZUZTLGiHcYtlm/OrQxhdmX1+XMTUy4X7yt0HLDrBtsdphu3NcDDWObbSVT1+V3WgphDmsbNyNupqx3Gk/M6aDDXZHamq6Z+9aMxKGGMd4HJzFhjPSA2fvqBYHDHAJi8lGQTPqjO2Z3wfdDNNK7Dxh/pHciONhjx780abeWcDBT6GYgFalKuLsnzEvn24YKL18KXGRMvjC51M6XSRfbs0XbVSi+kJDxCKs8QRuP8JQnr+OIKlPsR9GvLBN6qBKBUGR4dlgmmiJBYt8UCVlVUyKA5mCGlhjO36zOTS4oOF9MSnWwW2PZiRcke01NAyEYalIKwVBTZAiGmrDDMMT0IYZBkple1uIYWmoVxdASvTgGSDsznu7x+yT4RMZQUvIUDOGCgITBrytoGPTyhIgJr3KYv8oZm/cY5GKJjIGvuV5goEu3V5icbFLFVEzF/D6MKoIp9IpToReuCr3+VepltFpqqaWWWv53+QHGkZaYog1EygAAAABJRU5ErkJggg==);
+}
+#in.check {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAIDFG3K+AnK+AnK+AnK+Av///5LNO+v2277ii63ZbNTssiSu2R4AAAAFdFJOUwD+EJICFY1N4QAABDJJREFUaN7tmr1S4zAQgPUKYSbhr7m5J2DuTTyMcYirFKf4p6KI4biKIj44KooAuasoYuZCRYEPeLqTLMWxFFmW7S2YuWzBDIn9abU/0moVZLcX6wtCNgTnEwjG3oLBHMJgLBiMvcFsMBvMf4PBQ/nr7T+vMcbe9a+TFpjzV5zL9WNDjHOPBbkaN8Hsktlg7+3xpNPZPv+d/XNTH/OdvBfeFSaYkg/+1sXsk5feu8KjTxpOCWaXTOFBfnaPzOy5DmZAKAqDOmRic3OMlSophBOXfKHEJNhTD2oPYhyYYtxSE2RGezHDWDH+UR5oZ9jrGmHOcNjVbNepapB1jIPxVJc+xxiPDTCR2ogrSfCoGuOoBhO9rnhiDRMpxpJE8YiMIW4aV2GcdWfJmH61MlSdSQUmLUkaMZZxqMcMsG+ygt/Kg0mYnjLU18SVpy5hUq9rVHnGng4TmBiYGXmuwWCzOdGMGOowZnOiswp1mMB0t03EKJUwE1NMX5y+hHmbFeROmxAjnYmLoo3ENATBRLhbhpmJcqc3zhSiTBoI7miMsQQbNy/aUh8Ek3ggmKNiHDfHuMUkL8EMHgxc9VKJ6XM3nOaiSIeJKcZahTQxhJvFfzJSVIpVmEsuFHPEMMvFJB7pMA59K87eH1t54sQUk0VKtMSkgRZTmIiIYYAcc+trMV6n04kC8iemmL0FkYcMw6zSW2KSUI+hj/iZBgSTULUCjqG6HS2ViLxKTLZfMczVbHbPMcPrehjHS+dLDFlWjjnG94qYHq7CuEF0ocBkkVIDk0xcX4WZGmB4VBKMQ109V2CoiSNjDPVTFKxjQiFuqjC7VPkBfpYxDJDnVAmG5wjxks+ii2HeF4snhtnPTlPpUO/wHLOTrUfOhRx+PFde9Bieak7+bYb5xnasHNPL186SZOCpJmEKqcnWPN/WpyanazHknDi39QsFnyvHWKenNHoWXNhUdnBhkytZtrgDOYYuO11xEaW12k/1cRsVN/cxW/2YNpeXgW2t6gI2u5PqJd01KdCrN5iBaRmq3+4c/BVk842DOpjSUuA2BClMxHKucZnUr+Oq8qLt2Ly61pWQlun5paKgTWvYWFNeR9WnXpNi34U5ejgwByE7BTmWkSVnCnBIJDEFcWQl2QlxgKajABznhf2jeXOB+gqg1ZGFVfvGC+vWtW4DlXSc6jalyhpgNVtkfKy2DbvlYC3bh8uuZ8tmZu6sdq3VPNTxTZtG78qIrdrOuZXjVk3wQtLgUPG4YUt+JfttLggKQi893sWPjK8rZE5YuAWqcXkiurbxVY5k0KYXS7I0vOZal0aXbs1lg9lgNpgNprIy/VA/cdr6QD//En6Mdvi5qSBUwBygNrIyNgjmAATTUhkEowyCUQbBKINglEEwyiAYZRCMMghGGQSjDIJRBsEog2CUQTDKIBhlEIwy/wDtZFioLKz17QAAAABJRU5ErkJggg==);
+}
+#out.check {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACgBAMAAAAsgJlAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURQAAAHK+AnK+AnK+AnK+AnK+Av///5fPRIHFHev227/ijLHbc9Xss4QE99oAAAAFdFJOUwAQhtYLN3qNDQAABEBJREFUaN7tmk122jAQgNXcoIfIEXKB9gyOzc+2Mjbe2vndQkqTbZyfsg1taLc4eW23GPJ6qcqyDbYRo7GZVR+zyAsgPkaj0cxoZMY+HBm7C3tHQTHYR4MEc0iDOaLBGHvMHrPH7DG7Ya5+vYWcO+Mfp9VPjvkAi7l+4ysZvzbEmM+8JI9+E8y1mA13/r58FnLxR754rY+5FN/zXtavz2PxxrIuJqEsSu9Yf0ocFOamMoXVNL/XwXTEhHyF0QVnhsdYIXd85eKF3BugMRF3ZurJdkLex2K6BRMojDbHYcSU7rY75Rl3BijM2Wr+SrvF/B6DMTl/gjZam3MfgQm4De/6SA7QYMz0xwBJR2gwWmWSIT0dRiyTr8OYyWLBmJZemUSdWw0m1iuTbDkPxnS4i4ngE+6DmGHm6hrp8h6ICZ0BBmOFHoTpYAycGjkCMEN4H5SCAICJcXOS7rUdY+YxSS8RgOkKt0JKC8AEoO+dTwvyE8DEHuxzZdmGseDljpCYDmya0qSEbKtvWnxGUSYFfECBmXgkRVtoU2As/okC08HFGh2mmy+UJS1tnjbDtPKt0LJXf09WgsYMef5PL8dYa58VP9GVKxnYMCZw8n+WovjMMA+ZyESJwkTeKslwEXhSTO6QYYKRWSPow5hJP1/4h4dQhUkBOkycfd5xpGEyzFVi39MUI6cz1GByJ271EyvPMowMD/0Mk+h27GowvcxGopoKxm6OeZxOn1NM1BsjMLyXxXUxLlrwswwjUk47w7gOHjPywrkR+7KmqmDkCCQmuh954uttFeYJj+kMrHAqXGjibmISEwdu1euVGDnATqqyuwom8Ep+o8WYScgQCW1RwUhAZMOYsIDxE/eJ7QSzODm5TDE38oAV58OGDuh+maO2bHNZdr+1puWtrN4MolyYrwLFQGanb2vMcJWgIw/cmsZIliebW7NSHEYuGCjM8N7YhhHnxNmG9uqwFaW1Uor5nUk6lREvpPliPtoMoqPseLsZRJPTy1eVg6hCettdB3ZrnfjT2Z0WS7NbMMFkxtQlmFJaa57uusX6o3nyLdXXzUuBohPvUJjELkWZVC4UGxdt5UKxRglZra9nzQra6hmmYXldsbBnNCv2K6df2yA5eswNkoOQb1AcyzygmYk+JLaLwWaXI+sMaq2iD9AO2KHFH+dBDLq5MIP7xahWh8k9TdsZ3XiBMeg2kKYJjmpK2YYOg22RaTB6dVQDGrcPdRh9M/POwGBwrVUtBmz0fuHK7dK47YzAQE1wdQio15KP+ZaMWPeCYGnUwSiuK1RvaTEblycXMUBpfpWDxWgultAY+JqrBga6dKuFadJN2mP2mD3mv8Mc0WCIHnEieuCK6PEvoofRhLxvKoclTGM5oMGsl5nRqMNo1GE06jAadRiNOoxGHUajDqNRh9Gow2jUYTTqMBp1GI06jEYdRqMOo1GHBnPwDxfUhdCiLWKqAAAAAElFTkSuQmCC);
+}
+.selarea {
+	height: 0;
+	width: 50%;
+	text-align: center;
+}
+.selarea p {
+	position: relative;
+	z-index: 2;
+	top: 160px;
+	left: 100px;
+	color: #333;
+	clear: both;
+}
+.selarea .line {
+	font-size: 1.8em;
+}
+.selarea .direction {
+	font-size: 2.2em;
+	left: 53px;
+	padding-right: 8px;
+}
+.selarea img {
+	position: relative;
+	width: 70px;
+}
+.guide {
+	width:125px;
+	position: relative;
+	z-index: 2;
+	top: 190px;
+	left: 103px;
+	color: #333;
+	clear: both;
+	font-size: 1.2rem;
+	text-align: left;
+	line-height: 16px;
+}
+.guide img {
+	position: static;
+	height: 12px;
+	width: 12px;
+	padding-right: 2px;
+}
+#line {
+	width: 60%;
+	float: left;
+	text-align: center;
+}
+#line img {
+	height: 260px;
+	width: 190px;
+}
+#tab li {
+	height: 45px;
+	line-height: 38px;
+	width: 50%;
+	font-size: 1.4rem;
+	float: left;
+	list-style: none;
+	cursor: pointer;
+	color: #666;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAABaAgMAAAC0xGdwAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAP///8zMzPj4+GpbzlMAAAABdFJOUwBA5thmAAAAPUlEQVRYw+3MQQ0AIAwEsDMJIvGDHZgFSPZsBTS318keraZQKBQKhUKhUCgUCoVCoVAoFAqFQuFfuJoFeFDQNcR2plWXKgAAAABJRU5ErkJggg==);
+	background-size: 100% 100%;
+}
+#tab li.select {
+	color: #fff;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAABaBAMAAAA7hJLQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURQAAAAdzPAmNSQmNSWSziwdxOo2nJVkAAAADdFJOUwCcAVCFMV4AAACZSURBVGje7dDBCYNQFETRlxYC7tNDsIJoARLsv5Vo/Aru/2IWZwoYDrem8NXnHb0REBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBDwDpzXbvter/0+1+q44QQulblHSzg+Q4FnwuVV0QlzA7aEuQGPhMkB/wmTA+4JswNuCbMDbgl7B/wBb2omDmCTF/QAAAAASUVORK5CYII=);
+	background-size: 100% 100%;
+}
+#tab li.sel {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAABaAgMAAAC0xGdwAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURQAAAH3/r2TMjKr4yCaXDuEAAAABdFJOUwBA5thmAAAAP0lEQVRYw+3MUREAEBAFwFeSkPooIQQqMHOfuwE2p9bObKW6UCgUCoVCoVAoFAqFQqFQKBQKhULhX7hGrQAPLq7ExLZyDrOTAAAAAElFTkSuQmCC);
+}
+.disnon {
+	display: none;
+}
+.content_wrap {
+	clear: left;
+	height: 100%;
+	font-size: 20px;
+	text-align: center;
+	background: #ccc;
+	padding-top: 131px;
+	color: #fff;
+}
+nav {
+	height: 30px;
+	line-height: 28px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+#other {
+	font-size: 20px;
+	vertical-align: top;
+}
+#other li {
+	background-color: #fff;
+	vertical-align: top;
+	text-align: center;
+	line-height: 0;
+}
+#car {
+	height: 43px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-bottom: none;
+	border-top: none;
+}
+.car .carBack {
+	height: 40px;
+	width: 20%;
+	border-bottom: none;
+	border-top: none;
+	float: left;
+	background-color: #262626;
+}
+.car .icon40 {
+	height: 38px;
+	line-height: 36px;
+	width: 14%;
+	background-color: #fff;
+	float: left;
+	margin-left: 4px;
+	text-align: center;
+}
+.car .icon70 {
+	height: 38px;
+	line-height: 36px;
+	width: 24%;
+	float: left;
+	margin-left: 2px;
+	background-color: #fff;
+}
+.car .tempImg {
+	height: 36px;
+	width: 28%;
+	float: left;
+	text-align: center;
+	background-image: url(../img/trainnet/temp_back.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size: 2.2rem;
+	color: #fff;
+	font-weight: bolder;
+	background-size: 66px 35px;
+	;
+}
+#carTop {
+	height: 60px;
+	width: 100%;
+	display: block;
+	color: #666666;
+	font-size: 1.4rem;
+	text-align: center;
+}
+#carTop .carBackTop {
+	height: 60px;
+	width: 20%;
+	float: left;
+}
+.carBackTop .hasArrow {
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: #262626;
+}
+.carBackTop .hasNotArrow {
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: #262626;
+}
+#carTop .direction {
+	height: 60px;
+	width: 36%;
+	text-align: left;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+#carTop .temp {
+	height: 58px;
+	width: 21%;
+	float: left;
+	text-align: center;
+	background-color: #fff;
+}
+.car {
+	line-height: 40px;
+}
+.temp .text {
+	height: 19px;
+	width: 100%;
+	margin-top: 4px;
+}
+.temp .tempNumber {
+	height: 41px;
+	width: 100%;
+	font-size: 2.6rem;
+	font-weight: bolder;
+	color: #000;
+}
+#carTop .tempWhiteSpace {
+	height: 58px;
+	width: 21%;
+	text-align: left;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+.car .innerInfo {
+	height: 42px;
+	width: 78%;
+	text-align: left;
+	float: left;
+	padding: 0;
+	margin: 0;
+	color: #666666;
+	font-size: 1.4rem;
+	padding-left: 4px;
+}
+.iconExample .icon {
+	height: 38px;
+	width: 13%;
+	float: left;
+}
+.iconExample .text {
+	height: 38px;
+	width: 87%;
+	float: left;
+	color: #666666;
+	font-size: 13px;
+}
+div.cell {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+div.cell>p {
+	display: table-cell;
+	vertical-align: middle;
+}
+.rootTimeLine {
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 32px;
+}
+div.cellNotMarginLeft {
+	display: table;
+	width: 100%;
+	height: 38px;
+}
+div.cellLeftTop {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+	margin-top: 4px;
+	margin-left: 5px;
+	vertical-align: top;
+}
+div.cellMiddleTop {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+div.cellMiddleTop>p {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 1.4rem;
+	font-size: 1.4rem;
+}
+.from_car_out {
+	height: 61px;
+	width: 100%;
+	background-color: #72be02;
+	color: #fff;
+}
+.from_car_in {
+	height: 61px;
+	width: 100%;
+	background-image: url(../img/trainnet/station_back.png);
+	color: #666666;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.down_line {
+	line-height: 30px;
+}
+.up_line {
+	font-size: 1.2rem;
+	height: 25px;
+	line-height: 25px;
+}
+.up_line .left_area {
+	width: 50%;
+	text-align: left;
+	float: left;
+	margin-left: 8px;
+}
+.up_line .right_area {
+	text-align: right;
+	float: right;
+	margin-right: 8px;
+}
+.down_line .left_area {
+	width: 30%;
+	text-align: left;
+	font-size: 1.6rem;
+	float: left;
+}
+.down_line .left_area p {
+	margin-left: 8px;
+	margin-top: 4px;
+}
+.down_line .center_area {
+	width: 40%;
+	text-align: center;
+	font-size: 3.0rem;
+	float: left;
+}
+.down_line .right_area {
+	text-align: right;
+	font-size: 1.6rem;
+	float: right;
+}
+.down_line .right_area p {
+	margin-top: 4px;
+}
+div.cellNotMarginLeft .car_no {
+	height: 38px;
+	width: 36px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size: 2.0rem;
+	color: #fff;
+	font-weight: bolder;
+	border-top: none;
+	background-size: 37px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 2.0rem;
+}
+.green_car_up {
+	background-image: url(../img/trainnet/car_no_up.png);
+}
+.red_car_up {
+	background-image: url(../img/trainnet/car_no_up_red.png);
+}
+.green_car_mid {
+	background: #72be02;
+	;
+}
+.red_car_mid {
+	background: #B00000;
+}
+.green_car_down {
+	background-image: url(../img/trainnet/car_no_down.png);
+}
+.red_car_down {
+	background-image: url(../img/trainnet/car_no_down_red.png);
+}
+.red_car_exti_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24.5%;
+	padding-top: 152px;
+}
+.red_car_exti_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 27.5%;
+	padding-top: 152px;
+}
+#car_condition {
+	height: 40px;
+	line-height: 20px;
+	color: #fff;
+	background-color: #46c878
+}
+.lineInfo {
+	width: 100%;
+	height: 40px;
+	font-size: 1.8rem;
+	color: #666666;
+	background-color: #fff;
+	background-size: 8px;
+	background-repeat: no-repeat;
+}
+.lineInfo .lineName {
+	padding-left: 20px;
+	line-height: 38px;
+	float: left;
+}
+.lineInfo .trainIcon {
+	padding-top: 5px;
+	padding-right: 12px;
+	float: right;
+}
+.timetable_icon {
+	height: 28px;
+	width: 28px;
+	background-image: url(../img/trainnet/btn_timetable_on_56.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.timetable_icon.sel {
+	background-image: url(../img/trainnet/btn_timetable_tap_56.png);
+}
+.sferGuide_nav_side {
+	height: 30px;
+	width: 30%;
+	float: left;
+}
+.sferGuide_nav_center {
+	height: 30px;
+	width: 40%;
+	float: left;
+}
+.space_20_gray {
+	width: 100%;
+	height: 20px;
+	background-color: #e6e6e6;
+}
+.top_footer_bar {
+	height: 40px;
+	width: 100%;
+	background-image: url(../img/trainnet/btn_box_on_640.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: bolder;
+	border-top: none;
+	background-size: 100% 100%;
+	line-height: 4.0rem;
+	text-align: center;
+}
+.top_footer_bar.sel {
+	background-image: url(../img/trainnet/btn_box_tap_640.png);
+}
+.onbar_left_icon {
+	padding-top: 6px;
+	height: 34px;
+	width: 15%;
+	float: left;
+}
+.onbar_right_txt {
+	height: 40px;
+	width: 67%;
+	text-align: left;
+	text-shadow: none;
+	padding-left: 3px;
+	float: left;
+}
+.onbar_right_icon {
+	padding-top: 6px;
+	padding-left: 6px;
+	height: 34px;
+	width: 15%;
+	float: left;
+}
+.nav_select_st {
+	padding-top: 5px;
+	height: 35px;
+	text-align: center;
+	float: left;
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+}
+.nav_arrow {
+	width: 16%;
+	text-align: right;
+	padding-right: 10px;
+}
+.nav_time {
+	width: 30%;
+	text-align: left;
+}
+.nav_trans {
+	width: 15%;
+	padding-left: 13px;
+}
+.nav_home {
+	padding-left: 1px;
+	width: 15%;
+}
+.nav_ekimap {
+	padding-top: 12px;
+	padding-left: 1px;
+	height: 25px;
+	width: 15%;
+}
+.route_Info {
+	height: 40px;
+	width: 100%;
+	color: #666666;
+}
+.route_Info .time {
+	height: 38px;
+	width: 18%;
+	background-image: url(../img/trainnet/line_circle.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	font-weight: bolder;
+	font-size: 1.8rem;
+	line-height: 4rem;
+	text-align: center;
+	margin-left: 8px;
+	float: left;
+}
+.route_Info .station_name {
+	padding-right: 5%;
+	height: 38px;
+	width: 28%;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 40px;
+	float: left;
+}
+.route_Info .buttonArea {
+	padding-top: 4px;
+	padding-left: 11px;
+	height: 35px;
+	width: 12%;
+	float: left;
+}
+.buttonArea .trans {
+	background-image: url(../img/trainnet/btn_transfer_on_56.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 28px;
+	width: 28px;
+	float: left;
+}
+.trans.sel {
+	background-image: url(../img/trainnet/btn_transfer_tap_56.png);
+}
+.buttonArea .home {
+	background-image: url(../img/trainnet/btn_platform_on_56.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 28px;
+	width: 28px;
+	float: left;
+}
+.home.sel {
+	background-image: url(../img/trainnet/btn_platform_tap_56.png);
+}
+.buttonArea .ekimap {
+	background-image: url(../img/trainnet/btn_map_on_56.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 28px;
+	width: 28px;
+	float: left;
+}
+.ekimap.sel {
+	background-image: url(../img/trainnet/btn_map_tap_56.png);
+}
+#endimage {
+	margin-left: 5px;
+	z-index: 1;
+	width: 20%;
+	float: left;
+}
+#carsArea {
+	padding-top: 100px
+}
+.carInfo {
+	float: left;
+	width: 80%;
+}
+.timeHeader {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	font-size: 1.2rem;
+}
+.timeHeader .startTime {
+	width: 25%;
+	float: left;
+}
+.timeHeader .trainKind2 {
+	width: 26%;
+	float: left;
+}
+.timeHeader .distStation {
+	width: 28%;
+	float: left;
+}
+.timeHeader .homeNo {
+	width: 8%;
+	margin-left: -4px;
+	float: left;
+}
+.timeHeader .delay {
+	width: 12%;
+	float: left;
+}
+.distStationAndStations {
+	height: 30px;
+	margin: 0;
+	font-size: 1.6rem;
+	text-align: left;
+	color: #666;
+	background-color: #e6e6e6;
+	padding-left: 4px;
+}
+.white {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+li .startTime {
+	width: 24%;
+	height: 32px;
+	float: left;
+}
+li .trainKind {
+	width: 24%;
+	height: 24px;
+	padding: 4px 0;
+	margin: 0;
+	float: left;
+}
+li .distStation {
+	width: 32%;
+	height: 32px;
+	padding-left: 2px;
+	float: left;
+}
+li .homeNo {
+	width: 8%;
+	height: 32px;
+	margin-left: -18px;
+	float: left;
+}
+li .delay {
+	width: 14%;
+	height: 32px;
+	color: #c80000;
+	float: left;
+}
+.no_time_table {
+	height: 40px;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	color: #666666;
+	font-size: 1.2rem;
+	padding-left: 10px;
+}
+div.cellMiddleLeft p {
+	line-height: 30px;
+	padding-left: 8px;
+}
+.massage_footer {
+	color: #666666;
+	background-color: #e6e6e6;
+	padding-top: 5px;
+	font-size: 1.2rem;
+}
+.massage_footer p {
+	padding-left: 10px;
+	line-height: 1.4em;
+}
+.iconExample {
+	padding-top: 4px;
+}
+#subTitle {
+	font-size: 1.2rem;
+	text-align: center;
+}
+#subTitle .carNo {
+	width: 20%;
+	float: left;
+}
+#subTitle .wheel {
+	width: 15%;
+	float: left;
+}
+#subTitle .space {
+	width: 8%;
+	float: left;
+}
+#subTitle .cong {
+	width: 14%;
+	float: left;
+}
+#subTitle .ondo {
+	width: 19%;
+	float: left;
+}
+#subTitle .jyaku {
+	width: 22%;
+	float: left;
+	text-align: left;
+}
+@media screen and (min-width: 350px) {

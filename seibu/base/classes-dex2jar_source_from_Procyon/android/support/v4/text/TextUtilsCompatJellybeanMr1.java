@@ -1,0 +1,26 @@
+// 
+// Decompiled by Procyon v0.5.36
+// 
+
+package android.support.v4.text;
+
+import android.support.annotation.NonNull;
+import android.text.TextUtils;
+import android.support.annotation.Nullable;
+import java.util.Locale;
+import android.support.annotation.RequiresApi;
+import android.annotation.TargetApi;
+
+@TargetApi(17)
+@RequiresApi(17)
+class TextUtilsCompatJellybeanMr1
+{
+    public static int getLayoutDirectionFromLocale(@Nullable final Locale locale) {
+        return TextUtils.getLayoutDirectionFromLocale(locale);
+    }
+    
+    @NonNull
+    public static String htmlEncode(@NonNull final String s) {
+        return TextUtils.htmlEncode(s);
+    }
+}

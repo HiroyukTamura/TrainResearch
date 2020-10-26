@@ -1,0 +1,90 @@
+{
+    "routeName": "狭山線",
+    "routeId": "L002",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "",
+            "name": "",
+            "changeLineName1": "池袋線",
+            "changeLineName2": "",
+            "changeStationId1": "S0145NT",
+            "offset": 0,
+            "height": 216,
+            "changeLineRect1": {
+                "left": 720,
+                "top": 126,
+                "right": 930,
+                "bottom": 192
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {}
+        },
+        {
+            "id": "S0145NT",
+            "name": "西所沢",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 216,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 435,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0210SI",
+            "name": "下山口",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 546,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 438,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0215SK",
+            "name": "西武球場前",
+            "changeLineName1": "山口線",
+            "changeLineName2": "",
+            "offset": 876,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 834,
+                "top": 288,
+                "right": 1032,
+                "bottom": 336
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        }
+    ]
+}

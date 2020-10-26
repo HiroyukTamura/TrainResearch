@@ -1,0 +1,515 @@
+{
+    "routeName": "池袋線",
+    "routeId": "L001",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        426,
+        -342,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S0100IK",
+            "name": "池袋",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 48,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 258,
+                "right": 198,
+                "bottom": 306
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 303,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0101SC",
+            "name": "椎名町",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 378,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 342,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0102HI",
+            "name": "東長崎",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 708,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 429,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0103EK",
+            "name": "江古田",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1038,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0104SD",
+            "name": "桜台",
+            "changeLineName1": "西武有楽町線",
+            "changeLineName2": "",
+            "offset": 1368,
+            "height": 330,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 228,
+                "right": 246,
+                "bottom": 312
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 303,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0105NE",
+            "name": "練馬",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1698,
+            "height": 384,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 228,
+                "right": 198,
+                "bottom": 276
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 258,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0200TO",
+            "name": "豊島園",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2082,
+            "height": 414,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 315,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0106NM",
+            "name": "中村橋",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2496,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 396,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0107HU",
+            "name": "富士見台",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2826,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 354,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0110HZ",
+            "name": "練馬高野台",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 3156,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 441,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0115SJ",
+            "name": "石神井公園",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 3486,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0116OE",
+            "name": "大泉学園",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 3816,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 387,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0120HO",
+            "name": "保谷",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 4146,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 246,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0121HB",
+            "name": "ひばりヶ丘",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 4476,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0122HR",
+            "name": "東久留米",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 4806,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 405,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0130KI",
+            "name": "清瀬",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 5136,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 249,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0131AK",
+            "name": "秋津",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 5466,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 186,
+                "right": 198,
+                "bottom": 234
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 246,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0440TZ",
+            "name": "所沢",
+            "changeLineName1": "新宿線",
+            "changeLineName2": "新宿線",
+            "offset": 5796,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 48,
+                "right": 246,
+                "bottom": 96
+            },
+            "changeLineRect2": {
+                "left": 834,
+                "top": 288,
+                "right": 1032,
+                "bottom": 336
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 123,
+                "right": 342,
+                "bottom": 240
+            }
+        },
+        {
+            "id": "S0145NT",
+            "name": "西所沢",
+            "changeLineName1": "狭山線",
+            "changeLineName2": "",
+            "offset": 6180,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 834,
+                "top": 288,
+                "right": 1032,
+                "bottom": 336
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 426,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0150KS",
+            "name": "小手指",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 6564,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0151SG",
+            "name": "狭山ヶ丘",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 6894,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 369,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0152MH",
+            "name": "武蔵藤沢",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 7224,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 438,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0153IN",
+            "name": "稲荷山公園",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 7554,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0154IM",
+            "name": "入間市",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 7884,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0155BU",
+            "name": "仏子",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 8214,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 246,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0156MJ",
+            "name": "元加治",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 8544,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 303,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0160HA",
+            "name": "飯能",
+            "changeLineName1": "池袋・秩父線\n飯能－西武秩父",
+            "changeLineName2": "",
+            "offset": 8874,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 24,
+                "right": 246,
+                "bottom": 72
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 93,
+                "right": 261,
+                "bottom": 207
+            }
+        }
+    ]
+}

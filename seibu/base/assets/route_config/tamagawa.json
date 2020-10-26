@@ -1,0 +1,123 @@
+{
+    "routeName": "多摩川線",
+    "routeId": "L021",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S2801XM",
+            "name": "武蔵境",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 42,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 138,
+                "right": 198,
+                "bottom": 186
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 381,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S2802XS",
+            "name": "新小金井",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 372,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 357,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S2803XT",
+            "name": "多磨",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 702,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 249,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S2804XI",
+            "name": "白糸台",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1032,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 315,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S2805XK",
+            "name": "競艇場前",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1362,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 357,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S2806XR",
+            "name": "是政",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1692,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 303,
+                "bottom": 123
+            }
+        }
+    ]
+}

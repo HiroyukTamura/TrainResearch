@@ -1,0 +1,245 @@
+img.tenki_intro_tenki {
+	position:fixed;
+	top:15px;
+	left:37%;
+	width:120px;
+	height:120px;
+}
+img.tenki_intro_go {
+	position:fixed;
+	top:52px;
+	left:90%;
+	width:32px;
+	height:32px;
+}
+div.tenki_intro_ondo {
+	position:fixed;
+	top:150px;
+	left:30%;
+	font-size:37px;
+}
+span.tenki_intro_mini01_time{
+	position:fixed;
+	top:203px;
+	left:20%;
+	font-size:15px;
+}
+img.tenki_intro_mini01_tenki{
+	position:fixed;
+	top:225px;
+	left:20%;
+	width:45px;
+	height:45px;
+}
+span.tenki_intro_mini02_time{
+	position:fixed;
+	top:203px;
+	left:45%;
+	font-size:15px;
+}
+img.tenki_intro_mini02_tenki{
+	position:fixed;
+	top:225px;
+	left:45%;
+	width:45px;
+	height:45px;
+}
+span.tenki_intro_mini03_time{
+	position:fixed;
+	top:203px;
+	left:70%;
+	font-size:15px;
+}
+img.tenki_intro_mini03_tenki{
+	position:fixed;
+	top:225px;
+	left:70%;
+	width:45px;
+	height:45px;
+}
+
+@media screen and (min-width: 271px) and (max-width:320px) {
+	img.tenki_intro_tenki {
+		position:fixed;
+		top:15px;
+		left:100px;
+		width:120px;
+		height:120px;
+	}
+	img.tenki_intro_go {
+		position:fixed;
+		top:52px;
+		left:275px;
+		width:32px;
+		height:32px;
+	}
+	div.tenki_intro_ondo {
+		position:fixed;
+		top:140px;
+		left:56px;
+		font-size:37px;
+	}
+	span.tenki_intro_mini01_time{
+		position:fixed;
+		top:203px;
+		left:58px;
+		font-size:15px;
+	}
+	img.tenki_intro_mini01_tenki{
+		position:fixed;
+		top:225px;
+		left:58px;
+		width:45px;
+		height:45px;
+	}
+	span.tenki_intro_mini02_time{
+		position:fixed;
+		top:203px;
+		left:145px;
+		font-size:15px;
+	}
+	img.tenki_intro_mini02_tenki{
+		position:fixed;
+		top:225px;
+		left:145px;
+		width:45px;
+		height:45px;
+	}
+	span.tenki_intro_mini03_time{
+		position:fixed;
+		top:203px;
+		left:232px;
+		font-size:15px;
+	}
+	img.tenki_intro_mini03_tenki{
+		position:fixed;
+		top:225px;
+		left:232px;
+		width:45px;
+		height:45px;
+	}
+}
+
+@media screen and (min-width:241px) and (max-width: 270px) {
+	img.tenki_intro_tenki {
+		position:fixed;
+		top:12px;
+		left:90px;
+		width:101px;
+		height:101px;
+	}
+	img.tenki_intro_go {
+		position:fixed;
+		top:44px;
+		left:231px;
+		width:27px;
+		height:27px;
+	}
+	div.tenki_intro_ondo {
+		position:fixed;
+		top:123px;
+		left:25%;
+		font-size:31px;
+	}
+	span.tenki_intro_mini01_time{
+		position:fixed;
+		top:171px;
+		left:49px;
+		font-size:13px;
+	}
+	img.tenki_intro_mini01_tenki{
+		position:fixed;
+		top:190px;
+		left:49px;
+		width:38px;
+		height:38px;
+	}
+	span.tenki_intro_mini02_time{
+		position:fixed;
+		top:171px;
+		left:122px;
+		font-size:13px;
+	}
+	img.tenki_intro_mini02_tenki{
+		position:fixed;
+		top:190px;
+		left:122px;
+		width:38px;
+		height:38px;
+	}
+	span.tenki_intro_mini03_time{
+		position:fixed;
+		top:171px;
+		left:196px;
+		font-size:13px;
+	}
+	img.tenki_intro_mini03_tenki{
+		position:fixed;
+		top:190px;
+		left:196px;
+		width:38px;
+		height:38px;
+	}
+}
+
+@media screen and (max-width: 240px) {
+	img.tenki_intro_tenki {
+		position:fixed;
+		top:11px;
+		left:80px;
+		width:90px;
+		height:90px;
+	}
+	img.tenki_intro_go {
+		position:fixed;
+		top:39px;
+		left:206px;
+		width:24px;
+		height:24px;
+	}
+	div.tenki_intro_ondo {
+		position:fixed;
+		top:113px;
+		left:60px;
+		font-size:28px;
+	}
+	span.tenki_intro_mini01_time{
+		position:fixed;
+		top:152px;
+		left:44px;
+		font-size:11px;
+	}
+	img.tenki_intro_mini01_tenki{
+		position:fixed;
+		top:169px;
+		left:44px;
+		width:34px;
+		height:34px;
+	}
+	span.tenki_intro_mini02_time{
+		position:fixed;
+		top:152px;
+		left:109px;
+		font-size:11px;
+	}
+	img.tenki_intro_mini02_tenki{
+		position:fixed;
+		top:169px;
+		left:109px;
+		width:34px;
+		height:34px;
+	}
+	span.tenki_intro_mini03_time{
+		position:fixed;
+		top:152px;
+		left:175px;
+		font-size:11px;
+	}
+	img.tenki_intro_mini03_tenki{
+		position:fixed;
+		top:169px;
+		left:175px;
+		width:34px;
+		height:34px;
+	}
+}

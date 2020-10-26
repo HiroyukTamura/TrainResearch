@@ -1,0 +1,66 @@
+/* 以下、共通 */
+html{
+    font-size: 62.5%;
+}
+
+body{
+	margin:0px;
+	-webkit-text-size-adjust: 100%;
+	font-size: 1.4rem;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* どんなブラウザでも枠を含めた縦横サイズを統一 */
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+img{
+	margin-left:auto;
+	margin-right:auto;
+	border:0px;
+	vertical-align:middle;
+}
+
+/* ヘッダ */
+.head{
+	width:100%; /* 幅 */
+	padding:0px; /* 枠内余白 */
+	margin:0px; /* 枠外余白 */
+	border:0px; /* 枠 */
+	background-color:#FFFFFF; /* 背景色 */
+	color:#FFFFFF; /* 文字色 */
+	text-align:center; /* 文字位置 */
+	border-bottom:1px #a0a0a0 solid; 
+}
+.head img{
+	width:100%; /* 幅 */
+}
+img.head_img{
+	width:100%; /* 幅 */
+	max-width:640px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.main{
+	width:100%;
+}
+
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	background-color:#1f9a0b;
+	color:#FFFFFF;
+}
+
+
+/* 以上、共通 */
+

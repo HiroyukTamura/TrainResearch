@@ -1,0 +1,87 @@
+{
+    "routeName": "西武有楽町線",
+    "routeId": "L005",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S0315KT",
+            "name": "小竹向原",
+            "changeLineName1": "L902",
+            "changeLineName2": "L901",
+            "offset": 216,
+            "height": 330,
+            "changeLineRect1": {
+                "left": 36,
+                "top": -137,
+                "right": 336,
+                "bottom": -35
+            },
+            "changeLineRect2": {
+                "left": 735,
+                "top": -137,
+                "right": 1035,
+                "bottom": -35
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 438,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0320SR",
+            "name": "新桜台",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 546,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 390,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0105NE",
+            "name": "練馬",
+            "changeLineName1": "池袋線",
+            "changeLineName2": "",
+            "offset": 876,
+            "height": 384,  
+            "changeLineRect1": {
+                "left": 48,
+                "top": 288,
+                "right": 246,
+                "bottom": 336
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 216,
+                "right": 198,
+                "bottom": 264
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 258,
+                "bottom": 123
+            }
+        }
+    ]
+}

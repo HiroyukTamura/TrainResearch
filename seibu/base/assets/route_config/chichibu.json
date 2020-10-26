@@ -1,0 +1,218 @@
+{
+    "routeName": "西武秩父線",
+    "routeId": "L008",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S0160HA",
+            "name": "飯能",
+            "changeLineName1": "池袋線",
+            "changeLineName2": "",
+            "offset": 48,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 288,
+                "right": 246,
+                "bottom": 336
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 264,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0161HH",
+            "name": "東飯能",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 432,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 186,
+                "right": 198,
+                "bottom": 234
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 390,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0166CK",
+            "name": "高麗",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 762,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 264,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0167CM",
+            "name": "武蔵横手",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1092,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 405,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0168CH",
+            "name": "東吾野",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1422,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 381,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0170CA",
+            "name": "吾野",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1752,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 249,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0175CN",
+            "name": "西吾野",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2082,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 342,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0176CS",
+            "name": "正丸",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2412,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 291,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0178CB",
+            "name": "芦ヶ久保",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2742,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 363,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0179CY",
+            "name": "横瀬",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 3072,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 261,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0180CC",
+            "name": "西武秩父",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 3402,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 222,
+                "right": 198,
+                "bottom": 270
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 390,
+                "bottom": 123
+            }
+        }
+    ]
+}

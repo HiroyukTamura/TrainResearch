@@ -1,0 +1,200 @@
+{
+    "routeName": "拝島線",
+    "routeId": "L011",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "",
+            "name": "",
+            "changeLineName1": "新宿線",
+            "changeLineName2": "",
+            "changeStationId1": "S1430KO",
+            "offset": 0,
+            "height": 252,
+            "changeLineRect1": {
+                "left": 729,
+                "top": 162,
+                "right": 939,
+                "bottom": 228
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {}
+        },
+        {
+            "id": "S1430KO",
+            "name": "小平",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 252,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 264,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1515HG",
+            "name": "萩山",
+            "changeLineName1": "多摩湖線",
+            "changeLineName2": "多摩湖線",
+            "offset": 582,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 288,
+                "right": 246,
+                "bottom": 336
+            },
+            "changeLineRect2": {
+                "left": 810,
+                "top": 48,
+                "right": 1008,
+                "bottom": 96
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1534OG",
+            "name": "小川",
+            "changeLineName1": "国分寺線",
+            "changeLineName2": "国分寺線",
+            "offset": 966,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 48,
+                "right": 246,
+                "bottom": 96
+            },
+            "changeLineRect2": {
+                "left": 810,
+                "top": 288,
+                "right": 1008,
+                "bottom": 336
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 150,
+                "right": 249,
+                "bottom": 273
+            }
+        },
+        {
+            "id": "S1540HY",
+            "name": "東大和市",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1350,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 447,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1545TA",
+            "name": "玉川上水",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1680,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 225,
+                "right": 198,
+                "bottom": 273
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1546MS",
+            "name": "武蔵砂川",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2010,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 459,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1547SE",
+            "name": "西武立川",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2340,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 420,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1550HJ",
+            "name": "拝島",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 2670,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 228,
+                "right": 198,
+                "bottom": 276
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 264,
+                "bottom": 123
+            }
+        }
+    ]
+}

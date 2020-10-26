@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <title>山手線トレインネット</title>
+</head>
+<body>
+  <script src="jquery-2.0.3.min.js"></script>
+  <script>
+    function target(url, uid, area, line, station, at, push_id, kickback_id){
+      $.ajax({
+        url: url,
+        cache: false,
+        headers: {
+          'at': at,
+          'user-id': uid,
+          'area': area,
+          'line': line,
+          'station': station,
+          'at_train': '',
+          'self_id': '',
+          'dest_code': '',
+          'station_now': '',
+          'station_next': '',
+          'train_status': '',
+          'x-jreapp-push-id': push_id,
+          'x-jreapp-kickback-id': kickback_id
+        },
+        success: function(data){
+          location.replace('file:///data/data/jp.co.jreast/files/trainnetTop.html');
+        },
+        error: function(xhr, text, error){
+            var agent = navigator.userAgent;
+            if (agent.search(/Mac OS/) != -1) {
+                document.location = "iphone://goErrorDialog";
+            } else if (agent.search(/Android/) != -1) {
+                android.goErrorDialog(xhr.status);
+            }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

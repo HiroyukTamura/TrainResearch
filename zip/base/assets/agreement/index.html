@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<title>利用規約</title>
+</head>
+<body>
+<p id="Introduction">「JR東日本アプリ（GO! by Train）利用規約」（以下、「本規約」といいます。）は、東日本旅客鉄道株式会社（以下、「当社」といいます。）が提供するスマートフォン向け情報サービス（以下、「本サービス」といいます。）について、利用者による利用の一切について適用されるものとします。本サービスを利用するためには、本規約に同意いただくことが条件となりますので、ご利用前に必ず本規約をお読みになり、ご理解くださいますようお願い致します。 </p>
+<section id="kiyakuMenu">
+  <ol data-role="listview">
+    <li><a href="./kiyaku_01.html">本規約の範囲及び変更</a></li>
+    <li><a href="./kiyaku_02.html">本サービスの概要</a></li>
+    <li><a href="./kiyaku_03.html">知的財産権等の権利の帰属</a></li>
+    <li><a href="./kiyaku_04.html">利用者の責任</a></li>
+    <li><a href="./kiyaku_05.html">禁止事項</a></li>
+    <li><a href="./kiyaku_06.html">免責事項</a></li>
+    <li><a href="./kiyaku_07.html">権利義務の譲渡の禁止</a></li>
+    <li><a href="./kiyaku_08.html">本サービスの利用中断等</a></li>
+    <li><a href="./kiyaku_09.html">本サービスの内容等の変更</a></li>
+    <li><a href="./kiyaku_10.html">本サービスの終了</a></li>
+    <li><a href="./kiyaku_11.html">データに関するポリシー</a></li>
+    <li><a href="./kiyaku_12.html">準拠法</a></li>
+    <li><a href="./kiyaku_13.html">管轄裁判所</a></li>
+  </ol>
+</section>
+<script src="js/common.js"></script> 
+<script src="js/jquery-2.0.3.min.js"></script>
+<script>
+    $(function(){
+        $("li").bind('touchstart', function() {
+            $(this).attr("moved","no");
+            $(this).toggleClass("sel");
+          });
+          $("li").bind('touchmove', function() {
+            $(this).attr("moved","yes");
+            $(this).removeClass("sel");
+          });
+          $("li").bind('touchend', function() {
+            if($(this).attr("moved")=="no") {
+              $(this).removeClass("sel");
+            }
+          });
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+// 
+// Decompiled by Procyon v0.5.36
+// 
+
+package com.annimon.stream.operator;
+
+import com.annimon.stream.function.LongSupplier;
+import com.annimon.stream.iterator.PrimitiveIterator;
+
+public class LongGenerate extends OfLong
+{
+    private final LongSupplier supplier;
+    
+    public LongGenerate(final LongSupplier supplier) {
+        this.supplier = supplier;
+    }
+    
+    @Override
+    public boolean hasNext() {
+        return true;
+    }
+    
+    @Override
+    public long nextLong() {
+        return this.supplier.getAsLong();
+    }
+}

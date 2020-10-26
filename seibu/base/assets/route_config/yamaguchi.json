@@ -1,0 +1,77 @@
+{
+    "routeName": "山口線",
+    "routeId": "L022",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S1520YU",
+            "name": "西武遊園地",
+            "changeLineName1": "多摩湖線",
+            "changeLineName2": "",
+            "offset": 192,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 834,
+                "top": 48,
+                "right": 1032,
+                "bottom": 96
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 411,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1807QY",
+            "name": "遊園地西",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 576,
+            "height": 324,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 363,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S0215SK",
+            "name": "西武球場前",
+            "changeLineName1": "狭山線",
+            "changeLineName2": "",
+            "offset": 900,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 288,
+                "right": 246,
+                "bottom": 336
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 408,
+                "bottom": 123
+            }
+        }
+    ]
+}

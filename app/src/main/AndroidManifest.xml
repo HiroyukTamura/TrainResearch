@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--package="com.cks.android.train">-->
+
+<!--<application-->
+<!--android:allowBackup="true"-->
+<!--android:icon="@mipmap/ic_launcher"-->
+<!--android:label="@string/app_name"-->
+<!--android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--android:supportsRtl="true"-->
+<!--android:theme="@style/AppTheme">-->
+<!--<activity android:name=".MainActivity">-->
+<!--<intent-filter>-->
+<!--<action android:name="android.intent.action.MAIN"/>-->
+
+<!--<category android:name="android.intent.category.LAUNCHER"/>-->
+<!--</intent-filter>-->
+<!--</activity>-->
+<!--</application>-->
+
+<!--</manifest>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="268"
+        android:versionName="1.14.4"
+        android:compileSdkVersion="28"
+        android:compileSdkVersionCodename="9"
+        package="jp.co.jreast.jreastapp.commuter">
+
+    <uses-permission
+            android:name="android.permission.INTERNET"/>
+
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission
+            android:name="android.permission.VIBRATE"/>
+
+    <uses-permission
+            android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <uses-permission
+            android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:label="GO! by Train"
+            android:icon="@mipmap/ic_launcher"
+            android:name="jp.co.jreast.jreastapp.commuter.App"
+            android:allowBackup="true"
+            android:supportsRtl="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@ref/0x7f0700dd"/>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@ref/0x01060016"/>
+
+        <activity
+                android:theme="@ref/0x7f0e0010"
+                android:label="by Train"
+                android:name="jp.co.jreast.jreastapp.commuter.launchscreen.LaunchScreenActivity"
+                android:screenOrientation="1"
+                android:alwaysRetainTaskState="true"
+                android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN"/>
+
+                <category
+                        android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.acknowledgement.AcknowledgementActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.candidatestation.CandidateStationActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.timeselect.DepartureArrivalTimeSelectActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.favoriteroute.FavoriteRouteRegistrationActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.servicestatus.ServiceStatusDetailActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.selectsetting.SelectSettingActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.webview.WebViewActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.favoriterouteedit.FavoriteRouteEditActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.trainlocation.CandidateLineActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e00ec"
+                android:name="jp.co.jreast.jreastapp.commuter.commuterpager.settings.RemoveAccessLogActivity"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:name="jp.co.jreast.jreastapp.commuter.others.OthersActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"/>
+
+        <activity
+                android:theme="@ref/0x7f0e024c"
+                android:name="com.mixpanel.android.takeoverinapp.TakeoverInAppActivity"/>
+
+        <activity
+                android:theme="@ref/0x7f0e0015"
+                android:name="jp.co.jreast.jreastapp.commuter.push.PushReceiveActivity"
+                android:taskAffinity="jp.co.jreast.notice"
+                android:finishOnTaskLaunch="true"
+                android:clearTaskOnLaunch="true"
+                android:stateNotNeeded="true"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:alwaysRetainTaskState="false"
+                android:noHistory="true"/>
+
+        <activity
+                android:theme="@ref/0x7f0e0011"
+                android:name="jp.co.jreast.jreastapp.commuter.main.MainActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"/>
+
+        <provider
+                android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="jp.co.jreast.jreastapp.commuter.lifecycle-process"/>
+
+        <meta-data
+                android:name="com.android.vending.derived.apk.id"
+                android:value="1"/>
+    </application>
+</manifest>

@@ -1,0 +1,111 @@
+@charset "utf-8";
+/****************************************************/
+/* Yama font　設定
+/****************************************************/
+@font-face {
+	font-family: 'YamaFont';
+	src: url(../../fonts/TT-UDShinGoPro-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'YamaFont';
+	src: url(../../fonts/TT-UDShinGoPro-Medium.ttf);
+	font-weight: normal;
+}
+/* --------------------------
+基本設定
+-----------------------------*/
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'YamaFont';
+	background-color: #FFFFFF;
+	color: #83989F;
+}
+/* --------------------------
+詳細ページ　＜数字とタイトル＞
+-----------------------------*/
+
+dl {
+	display: block;
+	margin: 0 20px;
+	border-bottom: 1px solid #EFEFF4;
+}
+dl dt {
+	width: 100%;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	color: #2A5361;/*dark blue*/
+	font-weight: bold;
+	padding: 30px 0 25px;
+}
+dl dd {
+	width: 100%;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+img {
+	width: 100%;
+	margin: 20px 0 30px;
+}
+/* --------------------------
+tab切り替え
+-----------------------------*/
+
+.tab_wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+input[type="radio"] {
+	display: none;
+}
+.tab_area {
+	font-size: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+.tab_area label {
+	width: 45%;
+	margin: 0;
+	display: inline-block;
+	padding: 10px 0;
+	color: #A3B1B7;
+	background: #EFEFF4;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: ease 0.2s opacity;
+	border:1px solid #2A5361;
+}
+.tab1_label {
+border-radius: 8px 0 0 8px;
+}
+.tab2_label {
+border-radius: 0 8px 8px 0;
+}
+.tab_area label:hover {
+	/*opacity: 0.5;*/
+}
+.panel_area {
+	background: #fff;
+}
+.tab_panel {
+	display: none;
+}
+#tab1:checked ~ .tab_area .tab1_label {
+	background: #2A5361;
+	color: #FFFFFF;
+}
+#tab1:checked ~ .panel_area #panel1 {
+	display: block;
+}
+#tab2:checked ~ .tab_area .tab2_label {
+	background: #2A5361;
+	color: #FFFFFF;
+}
+#tab2:checked ~ .panel_area #panel2 {
+	display: block;
+}

@@ -1,0 +1,134 @@
+{
+    "routeName": "国分寺線",
+    "routeId": "L012",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S1510TJ",
+            "name": "国分寺",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 48,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 132,
+                "right": 198,
+                "bottom": 180
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1532KG",
+            "name": "恋ヶ窪",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 378,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 312,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1533TD",
+            "name": "鷹の台",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 708,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 309,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1534OG",
+            "name": "小川",
+            "changeLineName1": "拝島線",
+            "changeLineName2": "拝島線",
+            "offset": 1038,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 288,
+                "right": 246,
+                "bottom": 336
+            },
+            "changeLineRect2": {
+                "left": 834,
+                "top": 48,
+                "right": 1032,
+                "bottom": 96
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 252,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1435HM",
+            "name": "東村山",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1422,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 444,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "",
+            "name": "",
+            "changeLineName1": "新宿線",
+            "changeLineName2": "",
+            "changeStationId1": "S1435HM",
+            "offset": 1752,
+            "height": 270,
+            "changeLineRect1": {
+                "left": 729,
+                "top": 24,
+                "right": 939,
+                "bottom": 90
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {}
+        }
+    ]
+}

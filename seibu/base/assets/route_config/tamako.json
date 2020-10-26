@@ -1,0 +1,155 @@
+{
+    "routeName": "多摩湖線",
+    "routeId": "L013",
+    "stopXoffset": [
+        330,
+        426,
+        582,
+        678,
+        0,
+        0,
+        0,
+        0
+    ],
+    "stations": [
+        {
+            "id": "S1510TJ",
+            "name": "国分寺",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 48,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {
+                "left": 48,
+                "top": 132,
+                "right": 198,
+                "bottom": 180
+            },
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 300,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1512GA",
+            "name": "一橋学園",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 378,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 480,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1513AO",
+            "name": "青梅街道",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 708,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 354,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1515HG",
+            "name": "萩山",
+            "changeLineName1": "新宿線",
+            "changeLineName2": "拝島線",
+            "offset": 1038,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 48,
+                "right": 246,
+                "bottom": 96
+            },
+            "changeLineRect2": {
+                "left": 834,
+                "top": 288,
+                "right": 1032,
+                "bottom": 336
+            },
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 150,
+                "right": 300,
+                "bottom": 273
+            }
+        },
+        {
+            "id": "S1516YA",
+            "name": "八坂",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1422,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 261,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1518MT",
+            "name": "武蔵大和",
+            "changeLineName1": "",
+            "changeLineName2": "",
+            "offset": 1752,
+            "height": 330,
+            "changeLineRect1": {},
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 414,
+                "bottom": 123
+            }
+        },
+        {
+            "id": "S1520YU",
+            "name": "西武遊園地",
+            "changeLineName1": "山口線",
+            "changeLineName2": "",
+            "offset": 2082,
+            "height": 384,
+            "changeLineRect1": {
+                "left": 48,
+                "top": 252,
+                "right": 246,
+                "bottom": 300
+            },
+            "changeLineRect2": {},
+            "otherLineRect": {},
+            "nameRect": {
+                "left": 45,
+                "top": 9,
+                "right": 411,
+                "bottom": 123
+            }
+        }
+    ]
+}

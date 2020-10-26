@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* --------------------------
+基本設定
+-----------------------------*/
+
+html {
+ font-size: 62.5%;
+}
+body {
+	background-color: #FFFFFF;
+	color: #83989F;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',  "segoe ui", '游ゴシック  Medium', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+/* --------------------------
+トップページ設定
+-----------------------------*/
+
+.pageTitle {
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding: 40px 0 10px 0 ;
+	color: #2A5361
+}
+
+#Introduction {
+	font-size: 1.6rem;
+	line-height: 1.6em;
+	padding: 30px 20px 20px 20px;
+	text-indent: 1rem;
+}
+#kiyakuMenu ol {
+	counter-reset: li;
+	outline-style: none;
+}
+#kiyakuMenu li {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	border-top: 1px solid #EFEFF4;
+	top: 50%;
+	padding: 18px 0;
+}
+#kiyakuMenu li:hover {
+	background-color: #F8F8FC;
+}
+#kiyakuMenu li:last-child {
+	border-bottom: 1px solid #EFEFF4;
+}
+/*ol数字設定*/
+#kiyakuMenu li:before {
+	font-size: 1.7rem;
+	margin-right: 10px;
+	margin-left: 20px;
+	color: #2A5361; /*dark blue*/
+	font-weight: bold;
+	counter-increment: li;
+	content: counter(li)".";
+	float: left;/*タップエリア確保のためaタグをblock要素にするためfloatで横並び*/
+	clear: left;
+}
+#kiyakuMenu li a {
+	font-weight: bold;
+	color: #2A5361;/*dark blue*/
+	font-size: 1.7rem;
+	display: block;/*タップエリア確保*/
+	width: 100%;
+}
+/*右端の矢印マーク*/
+#kiyakuMenu li a:after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border: 0px;
+	border-top: solid 2px #35A86E;/*green*/
+	border-right: solid 2px #35A86E;/*green*/
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	margin-top: -6px;
+}
+/* --------------------------
+詳細ページ　＜数字だけの場合＞
+-----------------------------*/
+#kiyaku_number dl {
+	width: 100%;
+	margin-top: 20px;
+}
+#kiyaku_number dl dt {
+	float: left;
+	clear: left;
+	width: 10%;
+	text-align: center;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	color: #2A5361;
+	font-weight: bold;
+	padding: 20px 0 0 20px;
+}
+#kiyaku_number dl dd {
+	margin-left: 10%;
+	margin: 0 0 0 10%;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	padding: 20px;
+}
+/* --------------------------
+詳細ページ　＜数字とタイトル＞
+-----------------------------*/
+
+#kiyaku_title dl {
+	width: 100%;
+	margin-top: 20px;
+}
+#kiyaku_title dl dt {
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	color: #2A5361;/*dark blue*/
+	font-weight: bold;
+	padding: 20px 0 0 20px;
+}
+#kiyaku_title dl dd {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	padding: 20px;
+}
+/* --------------------------
+詳細ページ　＜（1）などの数字＞
+-----------------------------*/
+.pa20 {
+	padding: 20px;
+}
+#kiyaku_brackets ol {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#kiyaku_brackets ol li {
+	counter-increment: cnt;
+	font-size: 1.6rem;
+	text-indent: -1em;
+	padding-left: 1em;
+	list-style-position: inside;
+	padding-bottom: 10px;
+}
+#kiyaku_brackets ol li:before {
+	content: "(" counter(cnt) ")";
+	color: #2A5361;
+	font-weight: bold;
+	margin-right: 5px;
+}
+/* --------------------------
+詳細ページ　＜（1）などの数字とタイトル＞
+-----------------------------*/
+#kiyaku_policy .contents{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+	padding: 0 20px 60px 20px;
+	margin: 0;
+}
+
+#kiyaku_policy .ttl_txt{
+	counter-increment: cnt;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  color: #2A5361;/*dark blue*/
+  font-weight: bold;
+  padding: 40px 0 10px 0;
+	list-style-position: inside;
+}
+
+#kiyaku_policy .contents01 li{
+	list-style-type: square;
+  list-style-position: outside;
+	margin: 1em 5px 0 2em;
+  color: #2A5361;
+}
+
+#kiyaku_policy .contents02 li{
+	list-style-type: disc;
+  list-style-position: outside;
+	margin-right: 5px;
+  margin: 0 5px 0 3em;
+  color: #83989F;
+}
+
+#kiyaku_policy .contents03 li{
+	list-style-type: disc;
+  list-style-position: outside;
+	margin-right: 5px;
+  margin: 1em 5px 0 2em;
+  color: #83989F;
+}
+
+#kiyaku_policy a{
+	color: #35A86E;
+	font-weight: bold;
+}
+
+.pa10 {
+  padding-top: 10px!important;
+}
+
+.nowrap {
+	word-break: keep-all;
+}
