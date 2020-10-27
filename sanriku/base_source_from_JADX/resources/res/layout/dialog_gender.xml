@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginStart="13dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageBottomGenderMale" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/gender" android:scaleType="centerCrop"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/bottomGenderMale" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/genderM" android:layout_marginStart="13dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginStart="13dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageBottomGenderFemale" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/gender" android:scaleType="centerCrop"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/bottomGenderFeMale" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/genderF" android:layout_marginStart="13dp"/>
+    </LinearLayout>
+</LinearLayout>

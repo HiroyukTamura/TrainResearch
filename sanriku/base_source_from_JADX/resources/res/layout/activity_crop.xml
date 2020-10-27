@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/realBlack" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" style="@style/BaseToolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.isseiaoki.simplecropview.CropImageView android:id="@+id/cropImageView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:scv_background_color="@color/realBlack" app:scv_frame_color="@color/colorAccent" app:scv_frame_stroke_weight="1dp" app:scv_guide_color="@color/colorAccent" app:scv_guide_show_mode="1" app:scv_guide_stroke_weight="1dp" app:scv_handle_color="@color/colorAccent" app:scv_handle_show_mode="1" app:scv_handle_size="8dp" app:scv_min_frame_size="50dp" app:scv_overlay_color="@color/blackFade" app:scv_touch_padding="8dp"/>
+    <include layout="@layout/view_loading"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

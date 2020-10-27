@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewBase" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/mapBase" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0dp" android:layout_above="@+id/searchResult">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/mapFragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/searchResult" android:layout_width="match_parent" android:layout_height="300dp" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@+id/draggableHandle" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/draggable_handle_area_height">
+            <ImageView android:layout_width="match_parent" android:layout_height="@dimen/result_header_height" android:src="@mipmap/result_header" android:scaleType="fitXY"/>
+            <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/result_header_height"/>
+            <View android:layout_gravity="center_horizontal" android:background="@drawable/draggable_handle" android:layout_width="@dimen/draggable_handle_width" android:layout_height="@dimen/draggable_handle_height" android:layout_marginTop="25dp"/>
+            <ImageView android:id="@+id/buttonUpDown" android:focusable="false" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:src="@mipmap/ic_arrow_down" android:scaleType="fitCenter"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/buttonClose" android:focusable="false" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:src="@mipmap/ic_close" android:scaleType="fitCenter"/>
+        </FrameLayout>
+        <ListView android:id="@+id/scheduleList" android:background="@color/white" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </LinearLayout>
+    <p043jp.reifrontier.gym.p044ui.widget.autocompleted.RFGAutoCompletedEditText android:id="@+id/stationName" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

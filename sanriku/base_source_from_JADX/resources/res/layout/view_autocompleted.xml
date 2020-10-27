@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/viewBackground" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="@dimen/schedule_search_height" app:cardCornerRadius="4dp" app:cardElevation="0dp" app:strokeColor="@color/gray" app:strokeWidth="1dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/buttonCancel" android:focusable="false" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@mipmap/ic_arrow_left" android:scaleType="fitCenter" android:layout_weight="0"/>
+                <EditText android:theme="@style/GymEditTextTheme" android:id="@+id/editText" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/sanriku_station_name_hint" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSearch" style="@style/GymEditText.SingleLine"/>
+                <ImageView android:id="@+id/buttonDelete" android:focusable="false" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@mipmap/ic_close" android:scaleType="fitCenter" android:layout_weight="0"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <ListView android:id="@+id/hintList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

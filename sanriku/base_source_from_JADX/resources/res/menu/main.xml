@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/edit" android:checkableBehavior="all">
+        <item android:icon="@mipmap/edit" android:id="@+id/start_edit" android:title="@string/name" app:showAsAction="ifRoom"/>
+    </group>
+    <group android:id="@+id/setting" android:checkableBehavior="all">
+        <item android:icon="@mipmap/setting" android:id="@+id/start_setting" android:title="@string/menu_setting" app:showAsAction="ifRoom"/>
+    </group>
+</menu>

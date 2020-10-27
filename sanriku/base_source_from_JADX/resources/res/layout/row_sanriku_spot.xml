@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" app:cardCornerRadius="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/dateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small"/>
+        <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="right" android:id="@+id/stationView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

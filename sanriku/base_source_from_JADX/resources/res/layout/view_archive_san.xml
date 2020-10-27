@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_archive" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/archive_view_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/archive_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/black" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+            <ImageView android:id="@+id/archive_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/black" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+            <ImageView android:id="@+id/archive_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/black" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+            <ImageView android:id="@+id/archive_fourth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/black" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+            <ImageView android:id="@+id/archive_fifth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/black" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/archive_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39dp" android:tint="@color/black" android:layout_marginStart="10dp" app:layout_constraintLeft_toRightOf="@+id/archive_view_number" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/archive_message" android:layout_width="291dp" android:layout_height="24dp" android:layout_marginBottom="12dp" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

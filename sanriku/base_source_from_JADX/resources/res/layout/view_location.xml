@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewLocation" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/def_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_this" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:layout_width="320dp" android:layout_height="65dp" android:layout_marginBottom="6.5dp" android:src="@mipmap/app_image"/>
+        <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.5dp" android:text="@string/app_message"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginBottom="6.5dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_of_privacy" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:text="@string/location_message"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="13dp">
+            <Button android:textColor="@drawable/text_style" android:id="@+id/buttonLocation" android:background="@drawable/button_main" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/location" android:layout_marginEnd="6.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/confirmLocation" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/confirmLocation" android:background="@drawable/radius_ng" android:layout_width="100dp" android:layout_height="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/buttonLocation" app:layout_constraintTop_toTopOf="0">
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/confirmLocationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm_location_yet" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button android:enabled="false" android:textColor="@color/grayText" android:id="@+id/buttonLocationNext" android:background="@drawable/button_delight" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="13dp" android:text="@string/next"/>
+    </LinearLayout>
+</ScrollView>

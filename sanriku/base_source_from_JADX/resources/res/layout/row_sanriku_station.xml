@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_huge" android:layout_marginRight="@dimen/margin_huge">
+        <LinearLayout android:orientation="vertical" android:id="@+id/stationBase" android:background="@drawable/view_border_square_black" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sanriku_connector_margin_top">
+            <TextView android:textSize="32dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/stationName" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+                <TextView android:textSize="20dp" android:textColor="@color/black" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/stationNameKo" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/margin_small" android:layout_weight="1"/>
+                <TextView android:textSize="20dp" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/stationNameEn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_small" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/connectorTop" android:layout_width="@dimen/sanriku_connector_width" android:layout_height="@dimen/sanriku_connector_height" android:src="@drawable/connector_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/connectorBottom" android:layout_width="@dimen/sanriku_connector_width" android:layout_height="@dimen/sanriku_connector_height" android:layout_marginTop="@dimen/sanriku_connector_margin_bottom" android:src="@drawable/connector_bottom" android:layout_below="@+id/stationBase" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/locationPin" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="@dimen/sanriku_station_nearest_margin_left" android:src="@mipmap/side_marker" android:scaleType="fitCenter"/>
+</FrameLayout>

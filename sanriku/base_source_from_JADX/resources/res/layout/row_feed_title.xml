@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/row_feed" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/feed_view_title" android:background="@drawable/view_top_border" android:layout_width="match_parent" android:layout_height="60dp">
+        <View android:background="@drawable/oval_back" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <ImageView android:id="@+id/feed_image_title" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginBottom="9dp" android:src="@mipmap/ic_launcher_round" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/default_zero" android:layout_marginStart="9dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/feed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_zero" android:layout_marginStart="6.5dp" app:layout_constraintStart_toEndOf="@+id/feed_image_title" app:layout_constraintTop_toTopOf="@+id/feed_image_title"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/feed_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_zero" android:layout_marginStart="6.5dp" app:layout_constraintBottom_toBottomOf="@+id/feed_image_title" app:layout_constraintStart_toEndOf="@+id/feed_image_title" app:layout_constraintTop_toBottomOf="@+id/feed_title"/>
+        <ImageView android:id="@+id/feed_image_matome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9sp" android:src="@mipmap/to_act" android:contentDescription="@string/default_zero" android:layout_marginStart="6.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/feed_subtitle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/feed_view_image" android:layout_width="match_parent" android:layout_height="200dp">
+        <ImageView android:id="@+id/feed_image_main" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/default_zero"/>
+        <include layout="@layout/view_archive_san"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/feed_view_action" android:background="@color/white" android:padding="6.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/feed_body" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <Button android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/feed_action" android:background="@drawable/button_highlight" android:layout_width="160dp" android:layout_height="32dp" android:layout_marginTop="6.5dp" android:text="@string/register_diagnosis_button" android:layout_marginEnd="6.5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/feed_body"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/view_feed_data"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="6.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/grayText" android:id="@+id/feed_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

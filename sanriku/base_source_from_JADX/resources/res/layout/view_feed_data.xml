@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/feed_info_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="1dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/feed_mets" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mets"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/feed_point" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/point"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_distance"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/feed_distance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/distance"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_count"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/feed_step" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space android:layout_width="2dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

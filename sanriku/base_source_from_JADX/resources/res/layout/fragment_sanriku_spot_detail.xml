@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/fragmentAppBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/fragmentToolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_scrollFlags="3" app:popupTheme="@style/AppTheme.PopupOverlay" style="@style/BaseToolbar"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@+id/viewScrollContent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:id="@+id/contentBaseView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView android:textColor="@color/def_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/viewSpotTitleTop" android:background="#aa000000" android:paddingLeft="56dp" android:paddingRight="12dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:maxLines="1"/>
+    <ImageView android:id="@+id/buttonBack" android:focusable="true" android:clickable="true" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="@dimen/sanriku_toolbar_margin" android:layout_marginTop="@dimen/sanriku_toolbar_margin" android:src="@mipmap/back"/>
+</FrameLayout>

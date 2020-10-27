@@ -1,0 +1,6 @@
+{
+  "sdk_name": "SilentLogSDK",
+  "support_os": "Android",
+  "configuration_version": "1",
+  "use_internal_methods": true
+}

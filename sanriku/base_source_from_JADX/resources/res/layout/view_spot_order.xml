@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sanriku_spot_title" android:textStyle="bold" android:textColor="@color/sanriku_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sanriku_spot_order"/>
+    <RadioGroup android:orientation="horizontal" android:background="@drawable/spot_radio_group_background" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <RadioButton android:textSize="@dimen/sanriku_spot_item" android:textStyle="bold" android:textColor="@drawable/spot_radio_text" android:gravity="center" android:id="@+id/viewOrderLatest" android:background="@drawable/spot_radio_background" android:layout_width="0dp" android:layout_height="@dimen/sanriku_spot_item_height" android:button="@null" android:text="@string/sanriku_spot_order_latest" android:layout_weight="1"/>
+        <RadioButton android:textSize="@dimen/sanriku_spot_item" android:textStyle="bold" android:textColor="@drawable/spot_radio_text" android:gravity="center" android:id="@+id/viewOrderNearest" android:background="@drawable/spot_radio_background" android:layout_width="0dp" android:layout_height="@dimen/sanriku_spot_item_height" android:checked="true" android:button="@null" android:text="@string/sanriku_spot_order_nearest" android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>

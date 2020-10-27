@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/def_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" style="@style/BaseToolbar">
+                <ImageView android:layout_gravity="center" android:id="@+id/toolbarLogo" android:layout_width="189dp" android:layout_height="28dp" android:src="@drawable/sanriku_toolbar_logo" android:scaleType="fitCenter"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout android:orientation="vertical" android:id="@+id/content_frame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <View android:background="@drawable/bottom_shadow" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="0"/>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/bottom_tab_layout" android:background="@color/tabColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_weight="0" style="@style/BottomTabLayout"/>
+        </LinearLayout>
+        <include layout="@layout/view_loading"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@+id/viewLoginBonusCover" android:background="@color/login_bonus_background_cover" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/viewLoginBonusAnimation" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/viewLoginBonus" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

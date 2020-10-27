@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/sanriku_black" android:id="@+id/viewStationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:includeFontPadding="false"/>
+    <TextView android:textSize="16dp" android:textColor="@color/sanriku_gray" android:id="@+id/viewSchedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:includeFontPadding="false" android:layout_toRightOf="@+id/viewStationName" android:layout_alignBaseline="@+id/viewStationName"/>
+    <ImageView android:id="@+id/viewTrainPosition" android:layout_width="30dp" android:layout_height="30dp" android:src="@mipmap/ic_train_position" android:layout_below="@+id/viewStationName"/>
+</RelativeLayout>

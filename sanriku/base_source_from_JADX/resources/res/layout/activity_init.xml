@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/def_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" style="@style/BaseToolbar">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/margin_medium" android:src="@drawable/sanriku_toolbar_logo" android:scaleType="fitCenter"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/view_terms"/>
+        <include layout="@layout/view_location"/>
+        <include layout="@layout/view_login"/>
+        <include layout="@layout/view_edit"/>
+    </LinearLayout>
+    <include layout="@layout/view_loading"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
